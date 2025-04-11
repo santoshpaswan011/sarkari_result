@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarkari Result </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    .header {
+      background-color: #c00;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .header h1 {
+      margin: 0;
+    }
+    .tagline {
+      background-color: #007bff;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 14px;
+      color: white;
+      margin-top: 8px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #000;
+    }
+    .navbar a {
+      padding: 14px 20px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      background-color: #444;
+    }
+   
+    
+
+
+        footer {
+            background-color:black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            .job-list {
+                width: 90%;
+                
+            }
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 98%;
+            margin: 90px;
+            margin-left:auto;
+            margin-right: auto;
+
+            
+        }
+        .grid-item {
+            margin-left: 20px;
+            padding:15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+        }
+        .yellow { background-color: #b5a20f; }
+        .blue { background-color: #1e40af; }
+        .orange { background-color: #d97706; }
+        .red { background-color: #991b1b; }
+        .darkred { background-color: #7f1d1d; }
+        .green { background-color: #15803d; }
+        .pink { background-color: #db2777; }
+        .lightblue { background-color: #2563eb; }
+    
+    
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 100%;
+            margin: auto;
+        }
+        .column {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #b91c1c;
+        }
+        .column h2 {
+            background-color: #b91c1c;
+            color: white;
+            padding: 10px;
+            margin: -15px -15px 10px -15px;
+            text-align: center;
+        }
+        .column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .column ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .column ul li:last-child {
+            border-bottom: none;
+        }
+        .column ul li a {
+            text-decoration: none;
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+        .column ul li a:hover {
+            text-decoration: underline;
+        }
+       
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 98%;
+            margin: 90px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .column {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #b91c1c;
+        }
+        .column h2 {
+            background-color: #b91c1c;
+            color: white;
+            padding: 10px;
+            margin: -15px -15px 10px -15px;
+            text-align: center;
+        }
+        .column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .column ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .column ul li:last-child {
+            border-bottom: none;
+        }
+        .column ul li a {
+            text-decoration: none;
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+        .column ul li a:hover {
+            text-decoration: underline;
+        }
+        .view-more {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .view-more a {
+            font-weight: bold;
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        .scrolling-text-wrapper {
+      width: 100%;
+      overflow: hidden;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+    }
+
+    .scrolling-text {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      from {
+        transform: translateX(0%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    a {
+      margin-right: 40px;
+      color: blue;
+      text-decoration: none;
+    }
+
+
+
+    
+
+       
+    </style>
+</head>
+<body>
+    <header>
+    </head>
+    <body>
+    
+      <div class="header">
+        <h1>SARKARI RESULT</h1>
+        <div class="tagline">Government job vacancies</div>
+      </div>
+    
+      <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./syllabus.html">Syllabus</a>
+        <a href="./answer.html">Answer Key</a>
+        <a href="./new.html">Latest Jobs</a>
+        <a href="./tew.html">Admit Card</a>
+        <a href="./few.html">Results</a>
+        <a href="#">Mobile Apps</a>
+        <a href="#">More</a>
+      </div>
+
+    
+    <main>
+      <div class="scrolling-text-wrapper">
+        <div class="scrolling-text">
+          <a href="#">Sarkari Result Android Apps</a>||
+          <a href="#">Sarkari Result Youtube Channel</a>||
+          <a href="#">Sarkari Result Apple / IOS Apps</a>||
+          <a href="#">UP Police Recruitment 2025</a>||
+          <a href="#">UPSSSC X Ray Technician</a>||
+          <a href="#">Bihar 2 Year BEd Online</a>||
+          <a href="#">NTA GPAT 2025 Form</a>||
+          <a href="#">Sarkari Result Tools 2025</a>||
+        </div>
+      </div>
+
+    </main>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item yellow">JEE MAIN Phase II Admit Card 2025</div>
+            <div class="grid-item blue">CISF Tradesman Apply Online</div>
+            <div class="grid-item orange">Navy SSR / MR Apply Online</div>
+            <div class="grid-item red">Army Agniveer 2025 Apply Online</div>
+            <div class="grid-item darkred">UP Police Upcoming Recruitment 2025</div>
+            <div class="grid-item green">CSBC Bihar Constable Apply Online</div>
+            <div class="grid-item pink">UPPSC Pre 2025 Apply Online</div>
+            <div class="grid-item lightblue">Bihar Board 10th Result 2025</div>
+        
+    </main>
+    <main>
+        <div class="container">
+            <div class="column">
+                <h2>Result</h2>
+                <ul>
+                    <li><a href="#">Bihar Board Class 12th Result 2025</a></li>
+                    <li><a href="#">IBPS Clerk 14th Main Result 2025</a></li>
+                    <li><a href="#">IBPS PO 14th Final Result 2025</a></li>
+                    <li><a href="#">UPSC Geo Scientist Pre Result 2025</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Admit Card</h2>
+                <ul>
+                    <li><a href="#">SCI Junior Court Assistant Exam Date 2025</a></li>
+                    <li><a href="#">Bihar Vidhan Sabha Admit Card 2025</a></li>
+                    <li><a href="#">UPBED 2025 New Exam Date</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Latest Jobs</h2>
+                <ul>
+                    <li><a href="#">RPSC Junior Chemist Online Form 2025</a></li>
+                    <li><a href="#">MPPSC Food Safety Officer Online Form 2025</a></li>
+                    <li><a href="#">Bihar Home Guard Online Form 2025</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </main>
+    <main>
+        <div class="container">
+            <div class="column">
+                <h2>Answer Key</h2>
+                <ul>
+                    <li><a href="#">SSC MTS 2024 Final Answer Key</a></li>
+                    <li><a href="#">Rajasthan REET 2025 Answer Key</a></li>
+                    <li><a href="#">Railway RPF Constable Answer Key 2025</a></li>
+                </ul>
+                <div class="view-more"><a href="#">View More</a></div>
+            </div>
+            <div class="column">
+                <h2>Syllabus</h2>
+                <ul>
+                    <li><a href="#">NTA JEE Main Syllabus 2025</a></li>
+                    <li><a href="#">UPSSSC Homeopathic Pharmacist Syllabus 2024</a></li>
+                </ul>
+                <div class="view-more"><a href="#">View More</a></div>
+            </div>
+            <div class="column">
+                <h2>Admission</h2>
+                <ul>
+                    <li><a href="#">UP GNM Entrance Test UGPET 2025 Online Form</a></li>
+                    <li><a href="#">GPAT 2025 Online Form</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </main>
+    <main>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .sarkari-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    .sarkari-header {
+      background-color: #b30000;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .sarkari-content {
+      padding: 20px;
+      line-height: 1.6;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .highlight {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .section-divider {
+      margin-top: 20px;
+      border-top: 3px solid #b30000;
+      padding-top: 10px;
+      font-weight: bold;
+      color: #b30000;
+    }
+  </style>
+
+
+  <div class="sarkari-container">
+    <div class="sarkari-header">
+      Sarkari Result : Resources to Help Indians Get Government Jobs (Sarkari Job)
+    </div>
+    <div class="sarkari-content">
+      The future is uncertain, but a government job, Sarkari Jobs can help you secure your future. Click for valuable resources and help from Sarkari Result.<br><br>
+      Did you know that over <span class="highlight">1.5 million people lost their jobs in August 2021</span> in rural and urban India? Yes, the COVID-19 pandemic has hit the job market hard.<br>
+      Small businesses and multinationals alike have had to reconsider their staffing requirements.<br><br>
+      Are you an unemployed Indian citizen because of the pandemic and fluctuating job market?<br>
+      Are you working for a multinational company going through restructuring and considering your next steps?<br>
+      Are you a recent graduate looking to find your first job?<br>
+      Are you wondering if a government job is right for you?<br><br>
+      You've come to the right place! At Sarkari Result, we will show you the benefits of an Indian government job and help you to find a government job that's stable, long-term, and right for you!
+    </div>
+    <div class="section-divider">
+      Why Should I Consider a Government Job?
+    </div>
+  </div>
+    </main>
+    <main>
+       
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+    .info-section {
+      background: #fff;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+    }
+
+    .info-header {
+      background: #b30000;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .info-content {
+      text-align: center;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #f9f9f9;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin: 6px 0;
+    }
+
+    .footer-column ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .footer-column ul li a:hover {
+      color: #b30000;
+    }
+  </style>
+
+  <div class="info-section">
+    <div class="info-header">
+      Why trust SarkariResult.com for Sarkari Result?
+    </div>
+    <div class="info-content">
+      SarkariResult.Com You also know the name of Sarkari Result, this is not only a website but it is the trust of millions of unemployed youth / studying youth.<br>
+      Sarkari Result was established on 01 Jan 2012 and since then this Sarkari Result website is a trust and trust in which crores of youth are looking for government job/exam result/admit card/exam date information.<br><br>
+      Whenever a new exam result comes, exam admit card comes or any new government job, whether SSC / UPSC / state government or any other recruitment comes by the central government, first of all the youth open the Sarkari Result website and view information.
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Sarkari Result @X</a></li>
+        <li><a href="#">Sarkari Result @Telegram</a></li>
+        <li><a href="#">Sarkari Result @WhatsApp</a></li>
+        <li><a href="#">Sarkari Result @Instagram</a></li>
+        <li><a href="#">Sarkari Result @Threads</a></li>
+        <li><a href="#">Sarkari Result @Facebook</a></li>
+        <li><a href="#">Sarkari Result @Linkedin</a></li>
+        <li><a href="#">Sarkari Result @Youtube</a></li>
+        <li><a href="#">All Board Exams</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Apps</h4>
+      <ul>
+        <li><a href="#">Android App</a></li>
+        <li><a href="#">Apple iOS App</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>More</h4>
+      <ul>
+        <li><a href="#">BPSC</a></li>
+        <li><a href="#">UP-scholarship</a></li>
+        <li><a href="#">UPSC</a></li>
+        <li><a href="#">RPSC</a></li>
+        <li><a href="#">UPPCS</a></li>
+        <li><a href="#">Coast Guard</a></li>
+        <li><a href="#">UPSSSC</a></li>
+        <li><a href="#">IBPS</a></li>
+        <li><a href="#">Air Force</a></li>
+        <li><a href="#">Delhi DSSB</a></li>
+        <li><a href="#">HSSC</a></li>
+        <li><a href="#">Police Vacancy</a></li>
+        <li><a href="#">CCC</a></li>
+        <li><a href="#">SSC</a></li>
+        <li><a href="#">Navy</a></li>
+        <li><a href="#">Railway</a></li>
+        <li><a href="#">TET</a></li>
+      </ul>
+    </div>
+  </div>
+
+    </main>
+
+    
+    </div>
+    <footer>
+        <p>&copy; 2025 Sarkari Result. All Rights Reserved. Developed By Santosh Paswan.</p>
+    </footer>
+</body>
+</html>
